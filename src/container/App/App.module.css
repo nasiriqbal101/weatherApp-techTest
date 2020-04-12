@@ -10,9 +10,11 @@
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #140829;
 }
 
 .App h1 {
   text-align: center;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=App.module.css.map */

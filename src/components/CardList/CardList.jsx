@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styles from "./CardList.module.scss"
 import Card from "../Cards/Card";
 
-
 export default class CardList extends Component {
 
     state = {
@@ -12,7 +11,7 @@ export default class CardList extends Component {
             { city_id: 4749005 },
             { city_id: 4219762 }
         ],
-        
+
         filteredcities: []
     }
 
@@ -20,7 +19,7 @@ export default class CardList extends Component {
     componentDidMount() {
         let string = "";
         this.state.cityName.forEach(city => string += `${city.city_id},`)
-        console.log(string)
+        // console.log(string)
         fetch(`https://api.openweathermap.org/data/2.5/group?id=${string}&appid=0f33f5c78acf44e7d38b5f6706f6f59d`)
             .then(response => response.json())
             .then(cities => {
@@ -31,7 +30,7 @@ export default class CardList extends Component {
     }
 
     render() {
-        console.log(this.state.filteredcities)
+        // console.log(this.state.filteredcities)
         return (
             <>
                 <section className={styles.cardlist}>

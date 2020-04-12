@@ -1,12 +1,12 @@
 .card {
-  border: 2px solid #d11c1c;
-  width: 214px;
-  height: 390px;
+  width: 200px;
+  height: 340px;
   border-radius: 10px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.3);
   margin-bottom: 40px;
-  color: white;
+  background-image: url("../../static/images/weather.gif");
+  color: #f1e7e7;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -22,27 +22,20 @@
   font-size: 16px;
 }
 
-.card p {
-  font-size: 10px;
-}
-
 .card .topContain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.card .bottomContain h2 {
-  font-size: 10px;
+.card .topContain h2 {
+  font-size: 12px;
 }
 /*# sourceMappingURL=Card.module.css.map */

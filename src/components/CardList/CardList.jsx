@@ -20,7 +20,7 @@ export default class CardList extends Component {
         let string = "";
         this.state.cityName.forEach(city => string += `${city.city_id},`)
         // console.log(string)
-        fetch(`https://api.openweathermap.org/data/2.5/group?id=${string}&appid=0f33f5c78acf44e7d38b5f6706f6f59d`)
+        fetch(`https://api.openweathermap.org/data/2.5/group?id=${string}&units=metric&appid=0f33f5c78acf44e7d38b5f6706f6f59d`)
             .then(response => response.json())
             .then(cities => {
                 // console.log(cities)
